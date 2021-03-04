@@ -1,0 +1,475 @@
+/*
+
+*/
+
+* {
+    box-sizing: border-box;	
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dbdbdb;
+    font-family: 'Oxygen',sans-serif;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#social{
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Bir şeyin üstüne cıkmasını engelleriz*/
+    font-size: 18px;
+    text-align: right;
+    padding: 15px;
+}
+font{
+float: left; letter-spacing: 2px; 
+}
+
+span{
+    font-size: 12px;
+    letter-spacing: 1px; /* Yazının aralıklarını ayarlar*/
+    }
+
+#social>i { /* sosial sınıfının içindeki cocuk olan iler*/
+    float: right;
+    margin-right: 15px;
+}
+#social>i:hover {
+    opacity: 0.8; /* Opaklık*/
+}
+
+#container {
+    width: 80%;
+    margin:auto;
+    height: auto;
+}
+header {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28, .15); /* gögle ve renk*/
+    border-bottom-left-radius: 10px;/* sol alt koseden yuvarla*/
+    border-bottom-right-radius: 10px;
+    position: relative; /* yazının konumlanması için verdik*/
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    background-color: black; /* yazının belirgin olması opacity için black dedik */
+    margin-bottom: 5px; /* bosluk verdzdikk assagı yapısık olmasın*/
+}
+
+#headerResim { /* Resim tam sıgması için css verdik */
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.8; /* backgrounda gore opaklık degeri aldı*/
+}
+
+#centered {
+    position: absolute; /* headere gore konumlanması için verdik*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Yazının ortalanmasını saglar*/
+}
+section {
+    width: 100%; /*Containere gore sekillendi */
+    height: auto;
+    background-color: #f1f1f1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28, .15);
+    margin-top: 15px;
+    overflow: auto; /* navı sola yaslayınca tastı engellemek için yaptık*/
+	overflow-x:hidden;/*Alt kaydırma cubugu kaybolsun*/
+}
+
+nav {
+    width: 20%; /* Sectionun %20 sini kapla*/
+    height: auto;
+    float: left;
+    margin-top: 10px; /*üstten bosluk ver*/
+}
+nav ul {
+    width: auto;
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+nav li {
+    list-style-type: none; /* maddeler kalktı */
+}
+nav li a {
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none; /* alt çizgi kalktı */
+    color: black;
+    border-bottom: 1px solid #b4b4b4; /* Altlarına çizgi verdik */
+    padding-left: 20px;
+    display: block;
+}
+nav li a:hover{
+    color: white;
+    background-color: #adadad;
+}
+i{
+    margin-right: 10px; /* simglerin sagına bosluk at*/
+}
+
+main{
+    float: left;
+    height: auto; /*İçerige göre alır yükselikgi*/
+    width: 80%;
+    padding: 10px;
+}
+
+.icerik {
+    width: 47%;
+    height: auto;
+    display: inline-block;/*block ozelligi verdik */
+    margin-right: 15px; /*Blogların sagına bosluk*/
+    margin-bottom: 10px; /*Blogların altı bosluk*/
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28, .15);
+}
+.rsm {
+    width: 100%; /* İçinde buludugu etiketi gore genişlik alır*/
+    border-top-left-radius: 10px; /* resmin üst kenarlık*/
+    border-top-right-radius: 10px;
+    transition: opacity 0.8s;
+}
+.rsm:hover{
+    opacity: 0.6;
+}
+
+h5 {
+    margin: 10px;
+    color: dimgray;
+}
+
+.icerikText {
+    margin: 10px;
+    color: dimgray;
+}
+
+.btnDevam:link{
+    display: block;
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px; /* Y A S Ğ*/
+    background-color: #0071ce;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 10px;
+}
+.btnDevam:hover{
+    opacity: 0.8;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    color: white;
+    line-height: 75px; /* satır yüksekligi*/
+    text-align: center;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28, .15);
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28, .15);
+}
+#hakkimizdaRSM {
+    width: 350px;
+    height: 300px;
+    float: left;
+    border-radius: 10px;
+    margin: 25px;
+    margin-bottom: 10px;
+    transition: opacity 0.8s;
+}
+
+#hakkimizdaRSM:hover {
+    opacity: 0.6;
+}
+
+.hakYazi{
+    margin-right: 15px;
+    font-size: 15px;
+    font-family: Cambria;
+    text-indent: 40px; /* Satır başı yapmayı saglar*/
+    color: #494949;
+}
+
+.referans{
+   width: 30%;
+    height: 300px;
+    background-color: white;
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28, .15);
+}
+.refResim{
+    width: 100%;
+    height: 180px;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+    margin: 0;
+    opacity: 0.6;
+    transition: opacity 0.8s;
+}
+.refResim:hover{
+    opacity: 1;
+}
+.refBaslik{
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 0px;
+    color: black;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    background-color: #f1f1f1;
+    width: 100%;
+    margin-top: -5px;
+
+}
+
+.refDetay{
+    text-align: center;
+}
+
+.galResim{
+    width: 22%;
+    height: 200px;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: 0 2px 8px 2px rgba(20,23,28, .15);
+    margin: 10px;
+    transition: all 0.6s;
+    object-fit: cover;/*Resmin orarını korumaya yarar*/
+ }
+
+.galResim:hover{
+    opacity: 1;
+    border: 5px solid white;
+    cursor: pointer;
+}
+.link:link{
+    text-decoration: none;
+}
+
+iframe{
+    width: 98%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.section1{
+    width: 98%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.form {
+    width: 49%;
+    float: left;
+    height: 380px;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.col25{
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+.col75{
+    width: 75%;
+    float: left;
+    margin-top: 6px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type="text"],textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.row:after{
+    /* Satırlardan sonra*/
+    content:"";
+    clear: both;
+    display: block;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+}
+
+.adres {
+    width: 49%;
+    float: left;
+    height: 380px;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.span1{
+    display: block;
+    font-family: Calibri;
+    margin: 10px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+/*
+#social>i[class="fab fa-discord"]:hover{
+ color:#2962ff;
+}
+*/
+
+
+
+
+ 
+@media only screen and (min-width: 768px) and (max-width: 991px)  { 
+    .icerik{
+         width: 30%;
+		 margin-left:70px;
+    }
+	
+}
+
+
+@media only screen and (min-width: 575px) and (max-width: 767px)  { /* S  */
+     .icerik{
+         width: 30%;
+		 margin-left:50px;
+    }
+}
+
+
+@media only screen and (max-width: 574px)  { /* XS */
+   nav, main,font,.form,.adres{
+    width:100%;
+  }
+  footer{
+	  height: auto;
+  }
+  .social{
+	  height: auto;
+  }
+  font {
+	   font-size:10px;
+	   margin-bottom:5px;
+	   padding-right:5px;
+  }
+  .icerik{
+         width: 100%;
+    }
+	nav{
+		text-align:center;
+	}
+	.adres{
+		padding-top:50px;
+	}
+	#hakkimizdaRSM{
+		width:80%;
+		margin-right:50px;
+		height:auto;
+		padding:auto;
+	}
+	.galResim{
+		width:30%;
+		height:auto;
+		margin-left:30px;
+	}
+}
+
+/* 
+.referans{
+		width:30%;
+		height:auto;
+		margin:auto;
+		margin-top:10px;
+		margin-right:10px;
+	}
+	.refResim{
+		background-color:red;
+		width:80%;
+		height:auto;
+	}
+*/

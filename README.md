@@ -21,4 +21,4 @@
 https://www.w3schools.com/
 *Eğitim ve katkılarından dolayı Paylaşdıkça Youtube kanalına teşekkür ederim*
 
-```HTML5``` ```CSS3``` ```Frontend``` ```Software``` ```Computer``` ```Programmer``` ``````
+```HTML5``` ```CSS3``` ```Frontend``` ```Software``` ```Computer``` ```Programmer``` 

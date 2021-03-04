@@ -2,7 +2,7 @@
 
 ## Proje Tanıtımı 
 
-*Merhaba  **HTML CSS** kullanarak  Frontend(Ön Yüz Geliştirme) ilk projemi geliştirdim
+*Merhaba  **HTML CSS** kullanarak  Frontend(Ön Yüz Geliştirme) ilk projemi geliştirdim*
 
 ## Frontend Nedir
 

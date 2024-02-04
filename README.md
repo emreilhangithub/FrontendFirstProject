@@ -16,6 +16,20 @@
 
 *Cascading Style Sheets, HTML'e ek olarak metin ve format biçimlendirme alanında fazladan olanaklar sunan bir işaretleme dilidir.*
 
+### Anasayfa
+![anasayfa](https://github.com/emreilhangithub/FrontendFirstProject/blob/main/img/Anasayfa.png)
+
+### Hakkımızda
+![hakkimizda](https://github.com/emreilhangithub/FrontendFirstProject/blob/main/img/Hakkimizda.png)
+
+### Galeri
+![galeri](https://github.com/emreilhangithub/FrontendFirstProject/blob/main/img/Galeri.png)
+
+### Referanslar
+![referanslar](https://github.com/emreilhangithub/FrontendFirstProject/blob/main/img/Referanslar.png)
+
+### İletişim
+![iletisim](https://github.com/emreilhangithub/FrontendFirstProject/blob/main/img/Iletisim.png)
 
 ### Kaynaklar ###
 https://www.w3schools.com/
